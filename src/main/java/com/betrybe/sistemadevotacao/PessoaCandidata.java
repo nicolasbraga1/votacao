@@ -4,7 +4,6 @@ package com.betrybe.sistemadevotacao;
  * Cria a classe PessoaCandidata que herda de Pessoa.
  */
 public class PessoaCandidata extends Pessoa {
-  private String nome;
   private Integer numero;
   private Integer votos;
 
@@ -12,7 +11,7 @@ public class PessoaCandidata extends Pessoa {
    * Construtor da classe.
    */
   public PessoaCandidata(String nome, Integer numero) {
-    this.nome = nome;
+    super.setNome(nome);
     this.numero = numero;
     this.votos = 0;
   }
@@ -34,6 +33,6 @@ public class PessoaCandidata extends Pessoa {
   }
 
   public void receberVoto() {
-    votos++;
+    this.votos++;
   }
 }
