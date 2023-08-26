@@ -33,7 +33,7 @@ public class PessoaCandidata extends Pessoa {
     this.votos = votos;
   }
 
-  private void receberVoto() {
+  public void receberVoto() {
     votos++;
   }
 }
